@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_publish_mode">MOBILE</string> <!-- MDT / MOB-->
+    <array name="home_title_hellocabs">
+        <item>Available Credit</item>
+        <item>Street Pickup</item>
+        <item>History</item>
+        <!--  <item>Activate RSA</item>-->
+    </array>
+    <array name="home_subtitle_hellocabs">
+        <item>This is your available credit</item>
+        <item>Start street pickup</item>
+        <item>View your rides</item>
+        <!--<item>Start your share ride</item>-->
+    </array>
+    <array name="home_title_sunlight">
+        <item>Available Credit</item>
+        <item>Advanced Jobs</item>
+        <item>History</item>
+
+    </array>
+    <array name="home_subtitle_sunlight">
+        <item>View your available credit</item>
+        <item>Advanced Jobs List</item>
+        <item>View Your Rides</item>
+    </array>
+    <string name="app_name">InfoDispatch</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_navigation">Navigation</string>
+    <string name="action_profile">Profile</string>
+
+    <!--Client Login Details-->
+    <string name="action_status">Status</string>
+    <string name="action_logout">Logout</string>
+    <string name="action_support">Support</string>
+
+    <string name="action_edit">Edit</string>
+    <string name="client_Login">Client Login</string>
+    <string name="hint_client_id">Client Id</string>
+
+    <!--Driver Login Details-->
+    <string name="hint_client_password">Password</string>
+    <string name="client_pass_validate">Please enter Password</string>
+    <string name="client_id_validate">Please enter Client Id</string>
+
+    <string name="client_both_validate">Please enter Client Id and Password.</string>
+    <string name="user_Login">Driver Login</string>
+    <string name="hint_driver_id">Driver Id</string>
+
+    <!--Main screen Details-->
+    <string name="hint_driver_password">Password</string>
+    <string name="driver_pass_validate">Please enter Password</string>
+    <string name="driver_id_validate">Please enter Driver Id</string>
+    <string name="driver_both_validate">Please enter Driver Id and Password.</string>
+    <string name="are_sure">Are you sure?</string>
+    <string name="exit">Exit</string>
+
+
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="log_out">Logout</string>
+    <string name="are_sure_log">Are you sure to Logout?</string>
+    <string name="home">Home</string>
+    <string name="job_id">Job Id: </string>
+    <string name="bill">Bill Details</string>
+    <string name="rsa_route_list">RSA Route List</string>
+    <string name="rsa_job_list">RSA Job List</string>
+    <string name="history">History</string>
+    <string name="settings">Settings</string>
+
+    <string name="support">Support</string>
+    <string name="profile">Profile</string>
+    <string name="advenced_job">Advanced Jobs</string>
+    <string name="autobidding">Auto Bidding</string>
+    <string name="btn_save">SAVE</string>
+    <string name="login">LOGIN</string>
+    <string name="btn_stop">STOP</string>
+    <string name="btn_finish">FINISH</string>
+    <string name="btn_submit">SUBMIT</string>
+    <string name="btn_accept">ACCEPT</string>
+    <string name="btn_reach">ARRIVE</string>
+
+    <string name="btn_picup">PICK UP</string>
+    <string name="btn_nothanks">No,thanks</string>
+    <string name="btn_bidding_accept">Accept</string>
+    <string name="btn_drop_off">Dropoff</string>
+    <string name="lbl_travelled_dis">Distance:</string>
+    <string name="lbl_travelled_duration">Duration:</string>
+    <string name="lbl_start_time">Start Time:</string>
+    <string name="lbl_start_date">Start Date:</string>
+    <string name="lbl_end_time">End Time:</string>
+    <string name="lbl_end_date">End Date:</string>
+
+    <string name="lbl_pickup_loc">Pickup Location:</string>
+    <string name="lbl_drop_loc">Drop Location:</string>
+    <string name="btn_mail">Mail Invoice</string>
+    <string name="btn_sms">SMS Invoice</string>
+    <string name="lbl_today">Today </string>
+    <string name="lbl_yesterday">Yesterday </string>
+    <string name="lbl_this_week">This week </string>
+
+    <string name="lbl_last_week">Last week </string>
+    <string name="lbl_this_month">This Month</string>
+    <string name="txt_switch_on">Online</string>
+
+    <string name="txt_switch_off">Offline</string>
+    <string name="lbl_sound">Sound</string>
+
+    <string name="lbl_Malay">Malay</string>
+    <string name="lbl_Chinese">Chinese</string>
+    <string name="rsa">RSA</string>
+    <string name="share_ride">Share Ride</string>
+
+    <string name="lbl_credit_balance">Wallet Balance</string>
+    <string name="lbl_wallet_balance">Total Earnings</string>
+    <string name="lbl_payable_balance">Payable Balance</string>
+
+    <string name="lbl_driver_earnings">Driver \n Earnings</string>
+    <string name="lbl_driver_rating">Rating</string>
+    <string name="lbl_performance">Performance</string>
+    <string name="lbl_incidents">Incidence</string>
+    <string name="lbl_driver_name">Driver Name: </string>
+    <string name="lbl_driver_id">Driver ID: </string>
+
+    <string name="lbl_cab_type">Cab Type: </string>
+
+    <string name="lbl_phone">Phone#: </string>
+    <string name="lbl_active">Active/ </string>
+    <string name="lbl_inactive">Inactive</string>
+    <string name="lbl_device_status">Device Status</string>
+    <string name="lbl_imei">IMEI:</string>
+    <string name="lbl_ip">IP Address</string>
+    <string name="lbl_version">Version:</string>
+    <string name="lbl_builddate">Build Date:</string>
+    <string name="lbl_gps">GPS Enabled:</string>
+    <string name="lbl_gsm">GSM Enabled:</string>
+
+    <string name="lbl_lat">Latitude:</string>
+    <string name="lbl_long">Longitude:</string>
+    <string name="lbl_odometer">GPS Odometer:</string>
+
+    <string name="lbl_battery">Battery Status:</string>
+    <string name="lbl_payable">Payable</string>
+    <string name="lbl_credit">Credit</string>
+    <string name="lbl_wallet">Wallet</string>
+    <string name="lbl_jobno">Job #</string>
+    <string name="lbl_datetime">Date Time</string>
+
+    <string name="lbl_fare">Fare</string>
+    <string name="lbl_status">Status</string>
+    <string name="lbl_yes">YES</string>
+    <string name="lbl_no">NO</string>
+    <string name="dialog_lock_msg">Click on Image to Unlock</string>
+    <string name="dialog_stop_msg">Are you sure to stop the trip?</string>
+
+    <string name="txt_kerb_location">Choose your drop location here.</string>
+    <string name="txt_duration">Duration(Min):</string>
+    <string name="txt_distance">Distance(Kms):</string>
+    <string name="txt_start_time">Start time:</string>
+    <string name="lbl_phoneNO">Phone#:</string>
+
+    <string name="lbl_customer_name">Customer Name:</string>
+    <string name="lbl_pickup_time">Pickup time :</string>
+    <string name="lbl_pickup_location"> Pickup Location :</string>
+    <string name="lbl_drop_location"> Drop Location:</string>
+    <string name="currency">AED</string>
+    <string name="lbl_currency">Ra</string>
+    <string name="promocode">Promo code</string>
+    <string name="jobType_local">Local Job</string>
+    <string name="jobType_airport">Airport Job</string>
+    <string name="dialog_promocode">Enter your promocode</string>
+    <string name="msg_emergency">Emergency alert has been sent.</string>
+
+    <string name="lbl_maynamar">Maynamar</string>
+    <string name="lbl_language_settings">Language Settings</string>
+    <string name="lbl_english">English</string>
+
+    <string name="lbl_login_time">Login Time: </string>
+    <string name="lbl_completed">Completed</string>
+    <string name="lbl_cancelled">Cancelled</string>
+
+    <string name="lbl_earntime">Earn time</string>
+    <string name="lbl_date_settings">Date Settings</string>
+    <string name="lbl_sound_settings">Sound Settings</string>
+    <string name="lbl_home_earnings">Total Earnings</string>
+    <string name="lbl_job">Job#: </string>
+
+    <string name="lbl_from">From: </string>
+    <string name="lbl_to">To: </string>
+    <string name="lbl_eta">ETA: </string>
+    <string name="lbl_app_fare">Approximate Fare: </string>
+
+    <string name="lbl_bidding_address1">AK TELEMATICS \n NO.11,2nd Floor,BLOCK-C, \n PalaceRoad,Bangalore, \n Karnataka- 560052</string>
+    <string name="lbl_bidding_address2">AK TELEMATICS \n NO.11,2nd Floor,BLOCK-C, \n PalaceRoad,Bangalore, \n Karnataka- 560052 </string>
+    <string name="lbl_bidding_kms">far from your place </string>
+
+    <string name="lbl_bidding_duration">to Drive </string>
+    <string name="lbl_are_you_sure">Are you sure to start the Job ? </string>
+    <string name="lbl_pick_up_customer">Pick up the customer ?</string>
+    <string name="lbl_are_you_sure_rsa">Are you sure to start the Ride Share ? </string>
+    <string name="btn_dig_promocode_cancel">CANCEL</string>
+    <string name="lbl_7_days">Last 7 days</string>
+    <string name="lbl_14_days">Last 14 days</string>
+    <string name="lbl_21_days">View All</string>
+
+    <string name="lbl_30_days">Last 30 days</string>
+    <string name="txtPickUp">\u2022 PICK UP</string>
+    <string name="lbl_vechicle_status">Vehicle Status: </string>
+    <string name="action_refresh">Refresh</string>
+    <string name="lbl_rideNo">Ride # </string>
+    <string name="lbl_tripno">Trip #</string>
+    <string name="lbl_customer_details">Customer \n Details</string>
+    <string name="lbl_travelling_details">Travelling \n Details</string>
+
+    <string name="lbl_nearest_point">Nearest \n Point</string>
+    <string name="lbl_fare_kms">Fare / \n Kms</string>
+
+    <string name="lbl_pickup">PICKUP</string>
+    <string name="lbl_drop">DROP</string>
+
+    <string name="credit_title">Available Balance</string>
+    <string name="credit_sub_title">View your available balance</string>
+
+    <!-- History-->
+    <string name="wallet_title">Available Wallet</string>
+    <string name="wallet_sub_title">View your available Wallet</string>
+    <string name="lbl_triptype_local">Local Job</string>
+
+    <string name="lbl_triptype_airport">Airport Job</string>
+
+    <string name="lbl_hisroty_dist_dur">Distance &amp; Duration :</string>
+
+    <string name="lbl_hisroty_start_date_time">Start Date &amp; Time :</string>
+
+    <string name="lbl_hisroty_end_date_time">End Date &amp; Time :</string>
+    <!-- Alerts and Messages-->
+    <string name="alt_loading">Loading…</string>
+    <string name="alt_complete">Completing the Job,please wait</string>
+    <string name="alt_update_job_status">Updating job status</string>
+    <string name="alt_login">Logging in please wait</string>
+    <string name="alt_sending">Sending emergency alert</string>
+    <string name="alt_billing">Getting bill details,Please Wait</string>
+    <string name="alt_starting_trip">Starting the Trip</string>
+    <string name="alt_get_profile">Getting profile info</string>
+    <string name="alt_settings_changed">Settings has changed</string>
+
+    <string name="alt_getting_support">Getting Support Info</string>
+    <string name="alt_low_balance">Balance is low. Please top-up as soon as possible</string>
+    <string name="alt_alert">Alert</string>
+    <string name="alt_dont_sufficient_bal">Do not have sufficient balance to do a Job</string>
+    <string name="alt_drop_loc">Please select the Drop Location</string>
+    <string name="alt_promo_warn">Validating Promo code</string>
+    <string name="alt_logging_out">Logging out Please wait…</string>
+    <string name="distance_measurement_mode">GPS</string> <!-- GPS / PULSE-->
+    <string name="txt_pulse_settings">Device Settings</string>
+    <string name="hint_pulse_count">Pulse Count for this device</string>
+    <string name="hint_odometer_reading">Current Odometer reading</string>
+    <string name="txt_continue">CONTINUE</string>
+    <string name="alt_app_name">Ajman Taxi InfoDispatch</string>
+    <string name="alt_please_wait">Please wait…</string>
+
+
+    <!-- String For data hub  -->
+    <string name="open_serial_fail_no_permission">Failed to open serial port: no serial read / write permission!</string>
+    <string name="open_serial_fail_unknown_error">Failed to open serial port: unknown error!</string>
+    <string name="open_serial_fail_wrong_parameter">Failed to open serial port: wrong parameter!</string>
+    <string name="datahub_address">Address:</string>
+    <string name="open_datahub">Open Datahub</string>
+    <string name="close_datahub">Close Datahub</string>
+    <string name="datahub_opened">Datahub is already open!</string>
+    <string name="open_datahub_success">Open datahub Success!</string>
+    <string name="open_datahub_fail">Open datahub fail!</string>
+    <string name="datahub_closed">Datahub is already Close!</string>
+    <string name="close_datahub_success">Close datahub Success!</string>
+    <string name="datahub_state">Datahub State:</string>
+    <string name="state_open">Open</string>
+    <string name="state_close">Close</string>
+    <string name="datahub_version">Datahub version</string>
+    <string name="sensor_in_state_hight">State Is:hight</string>
+    <string name="sensor_in_state_low">State Is: low</string>
+    <string name="voltage">Voltage</string>
+    <string name="start_speed_in_count">Start speed in count</string>
+    <string name="stop_speed_in_count">Stop speed in count</string>
+
+    <string name="open_sensor_out">Open Sensor out</string>
+    <string name="close_sensor_out">Close Sensor out</string>
+    <string name="get_sensor_out_state">Get sensor out state</string>
+    <string name="select_upgrade_file">Select upgrade file</string>
+    <string name="upgrade_file">Upgrade file</string>
+    <string name="upgrade_start">Upgrade start</string>
+    <string name="upgrade_stop">Upgrade stop</string>
+    <string name="upgrade_successful">Upgrade successful!</string>
+    <string name="stop_upgrade">Stop Upgrade!</string>
+    <string name="upgrade_failed">Upgrade failed!</string>
+    <string name="select_upgrade_message">Please select upgrade file first!</string>
+    <string name="setting_acc_time">Setting acc time</string>
+    <string name="get_acc_time">Get acc time</string>
+
+    <string name="setting_acc_time_successful">Setting acc time successful!</string>
+    <string name="setting_acc_time_failed">Setting acc time failed!</string>
+    <string name="acc_power_off">Acc power off</string>
+    <string name="acc_power_off_time">Acc power off time:</string>
+    <string name="acc_power_off_setting_successful">Acc power off setting successful!</string>
+    <string name="acc_power_off_setting_failed">Acc power off setting failed!</string>
+    <string name="uart_device">Device:</string>
+    <string name="baudrates">Baud rate:</string>
+    <string name="paritybit">Parity bit:</string>
+    <string name="bitwidth">Bit width:</string>
+    <string name="stopbit">Stop bit:</string>
+    <string name="uart_setting">UART setting</string>
+    <string name="get_uart_setting">Get UART Setting</string>
+    <string name="uart_restore_default">UART restore default</string>
+    <string name="uart_transmission">UART transmission</string>
+    <string name="opendebug">Open debug</string>
+    <string name="closedebug">Close debug</string>
+    <string name="default_value">Unknown</string>
+    <string name="title_version">1 Version</string>
+    <string name="title_uart">2 UART</string>
+    <string name="title_sensor_in">3 Sensor in</string>
+    <string name="title_voltage">4 Voltage</string>
+    <string name="title_speed_in">5 Speed in</string>
+    <string name="title_sensor_out">6 Sensor out</string>
+    <string name="title_upgrade">7 Upgrade</string>
+    <string name="title_acc">8 ACC</string>
+    <string name="title_debug">9 Debug</string>
+
+    <string name="time_error">Time error !</string>
+    <string name="hotel_pickup">Hotel pickup</string>
+    <string name="update_geofence">update geofence</string>
+    <string name="alt_getting_geofence">Getting updated geofence points</string>
+</resources>

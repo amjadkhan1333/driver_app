@@ -1,0 +1,32 @@
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/layout-sw600dp/activity_bill.xml" value="0.35546875" />
+        <entry key="app/src/main/res/layout-sw600dp/activity_kerb.xml" value="0.35546875" />
+        <entry key="app/src/main/res/layout-sw600dp/activity_main.xml" value="0.35546875" />
+        <entry key="app/src/main/res/layout-sw600dp/client_login.xml" value="0.375" />
+        <entry key="app/src/main/res/layout-sw600dp/content_job_details.xml" value="0.35546875" />
+        <entry key="app/src/main/res/layout-sw600dp/dialog_parking.xml" value="0.35546875" />
+        <entry key="app/src/main/res/layout-sw600dp/homepage_main.xml" value="0.35546875" />
+        <entry key="app/src/main/res/layout-sw600dp/listitem_home.xml" value="0.5" />
+        <entry key="app/src/main/res/layout-sw600dp/splash_screen.xml" value="0.1578125" />
+        <entry key="app/src/main/res/layout-sw600dp/tool_bar.xml" value="0.35546875" />
+        <entry key="app/src/main/res/layout/activity_bill.xml" value="0.23697916666666666" />
+        <entry key="app/src/main/res/layout/activity_kerb.xml" value="0.23697916666666666" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.23697916666666666" />
+        <entry key="app/src/main/res/layout/client_login.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/content_job_details.xml" value="0.23697916666666666" />
+        <entry key="app/src/main/res/layout/dialog_parking.xml" value="0.35390625" />
+        <entry key="app/src/main/res/layout/dialog_stop.xml" value="0.23697916666666666" />
+        <entry key="app/src/main/res/layout/homepage_main.xml" value="0.23697916666666666" />
+        <entry key="app/src/main/res/layout/listitem_home.xml" value="0.23697916666666666" />
+        <entry key="app/src/main/res/layout/splash_screen.xml" value="0.10520833333333333" />
+        <entry key="app/src/main/res/layout/tool_bar.xml" value="0.23697916666666666" />
+        <entry key="app/src/main/res/layout/user_login.xml" value="0.23697916666666666" />
+      </map>
+    </option>
+  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK" />
+</project>

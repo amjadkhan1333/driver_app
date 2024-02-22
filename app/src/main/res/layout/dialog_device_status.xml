@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="350dp"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardBackgroundColor="@color/color_dark_blue"
+        card_view:cardPreventCornerOverlap="false"
+        card_view:cardUseCompatPadding="true">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="10dp">
+
+                    <TextView
+                        android:id="@+id/lbl_device_status"
+                        style="@style/heading_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:text="@string/lbl_device_status"
+                        android:textSize="@dimen/textsize" />
+
+                    <ImageView
+                        android:id="@+id/imgStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_margin="10dp"
+                        android:layout_toRightOf="@+id/lbl_device_status"
+                        android:background="@drawable/circle_green" />
+
+                    <ImageView
+                        android:id="@+id/img_dig_cancel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/lbl_device_status"
+                        android:layout_alignParentEnd="true"
+                        android:background="@android:drawable/ic_menu_close_clear_cancel"
+                        android:layout_alignParentRight="true" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/color_toolbar"
+                    android:padding="5sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:id="@+id/lbl_imei"
+                            style="@style/lbl_status"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:text="@string/lbl_imei"
+                            android:textSize="@dimen/textsize" />
+
+                        <TextView
+                            android:id="@+id/txt_imei"
+                            style="@style/txt_status"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textSize="@dimen/textsize" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:id="@+id/lbl_ip"
+                            style="@style/lbl_status"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:text="@string/lbl_ip"
+                            android:textSize="@dimen/textsize" />
+
+                        <TextView
+                            android:id="@+id/txt_ip"
+                            style="@style/txt_status"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textSize="@dimen/textsize" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:id="@+id/lbl_version"
+                            style="@style/lbl_status"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:text="@string/lbl_version"
+                            android:textSize="@dimen/textsize" />
+
+                        <TextView
+                            android:id="@+id/txt_version"
+                            style="@style/txt_status"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="left"
+                            android:textSize="@dimen/textsize" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:id="@+id/lbl_build_date"
+                            style="@style/lbl_status"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:text="@string/lbl_builddate"
+                            android:textSize="@dimen/textsize" />
+
+                        <TextView
+                            android:id="@+id/txt_build_date"
+                            style="@style/txt_status"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="left"
+                            android:textSize="@dimen/textsize" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:id="@+id/lbl_gps"
+                            style="@style/lbl_status"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:text="@string/lbl_gps"
+                            android:textSize="@dimen/textsize" />
+
+                        <TextView
+                            android:id="@+id/txt_gps"
+                            style="@style/txt_status"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="left"
+                            android:textSize="@dimen/textsize" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:id="@+id/lbl_gsm"
+                            style="@style/lbl_status"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:text="@string/lbl_gsm"
+                            android:textSize="@dimen/textsize" />
+
+                        <TextView
+                            android:id="@+id/txt_gsm"
+                            style="@style/txt_status"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="left"
+                            android:textSize="@dimen/textsize" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:id="@+id/lbl_latitude"
+                            style="@style/lbl_status"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:text="@string/lbl_lat"
+                            android:textSize="@dimen/textsize" />
+
+                        <TextView
+                            android:id="@+id/txt_latitude"
+                            style="@style/txt_status"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="left"
+                            android:textSize="@dimen/textsize" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:id="@+id/lbl_longitude"
+                            style="@style/lbl_status"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:text="@string/lbl_long"
+                            android:textSize="@dimen/textsize" />
+
+                        <TextView
+                            android:id="@+id/txt_longitude"
+                            style="@style/txt_status"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="left"
+                            android:textSize="@dimen/textsize" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

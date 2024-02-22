@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:background="#ffffff"
+        android:id="@+id/layout_header"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+       android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:gravity="center"
+            android:layout_weight="1"
+            android:id="@+id/txt_jobno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RGLC123"
+            android:textSize="@dimen/textsize_small"
+            style="@style/txt_history"
+
+            />
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/txt_datetime"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="06-12-16|11:00 AM"
+            style="@style/txt_history"
+            android:gravity="center"
+            android:textSize="@dimen/textsize_small"
+            />
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/txt_fare"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="200RM"
+            android:textSize="@dimen/textsize_small"
+            style="@style/txt_history"
+            android:gravity="center"
+            />
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/txt_status"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Completed"
+            android:textSize="@dimen/textsize_small"
+            android:drawableRight="@android:drawable/arrow_down_float"
+            style="@style/txt_history"
+            android:gravity="center"
+            />
+    </LinearLayout>
+   <!-- <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <include
+        layout="@layout/history_details"/>
+</LinearLayout>-->
+
+</LinearLayout>

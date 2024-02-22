@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_dark_blue"
+    android:orientation="vertical">
+
+    <include layout="@layout/tool_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:fillViewport="true"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="7dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_address_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/card_bidding_details"
+                    android:background="@color/color_dark_blue"
+                    card_view:cardCornerRadius="1dp"
+                    card_view:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/color_dark_blue"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:background="@drawable/red" />
+
+                            <TextView
+                                android:id="@+id/lbl_pickuploc"
+                                style="@style/lbl_onJob_address_tab"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:gravity="left"
+                                android:padding="5dp" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/textColorPrimary"
+                            android:padding="5sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:background="@drawable/green" />
+
+                            <TextView
+                                android:id="@+id/lbl_droploc"
+                                style="@style/lbl_onJob_address_tab"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:gravity="left"
+                                android:padding="5dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/txtDriverNote"
+                                style="@style/fixed_fare_lbl"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:padding="5dp"
+                                android:text="Please pick this customer from Airport" />
+
+                            <TextView
+                                android:id="@+id/txtFixedFare"
+                                style="@style/fixed_fare_lbl"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="Fixed Fare"
+                                android:visibility="gone" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="7dp"
+                android:layout_weight="1">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/buttonLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/card_bidding_details"
+                    android:background="@color/color_dark_blue"
+                    card_view:cardCornerRadius="1dp"
+                    card_view:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/color_dark_blue"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:padding="5dp">
+
+                            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                android:id="@+id/container"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <ProgressBar
+                                    android:id="@+id/bidding_progressbar"
+                                    style="?android:attr/progressBarStyleHorizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:indeterminate="false"
+                                    android:max="60"
+                                    android:progress="30"
+                                    android:progressDrawable="@drawable/progress_style" />
+
+                                <TextView
+                                    android:id="@+id/txt_bidding_progressbar"
+                                    style="@style/lbl_onJob_address_tab"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_centerVertical="true" />
+
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <Button
+                                android:id="@+id/btn_nothanks"
+                                style="@style/btn_bidding_tab"
+                                android:layout_width="wrap_content"
+                                android:layout_height="70dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="15dp"
+                                android:layout_weight="1"
+                                android:background="@color/eme_btn_color"
+                                android:textColor="@color/quantum_white_text"
+                                android:gravity="center"
+                                android:text="@string/btn_nothanks" />
+
+                            <Button
+                                android:id="@+id/btn_bidding_accept"
+                                style="@style/btn_bidding_tab"
+                                android:layout_width="wrap_content"
+                                android:layout_height="70dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="15dp"
+                                android:background="@color/color_green"
+                                android:textColor="@color/quantum_white_text"
+                                android:layout_marginRight="10dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="@string/btn_bidding_accept" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="100dp"
+                                    android:layout_height="50dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/flag" />
+
+                                <TextView
+                                    android:id="@+id/txt_bidding_kms"
+                                    style="@style/lbl_onJob_address_tab"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:text="0"
+                                    android:gravity="center_vertical" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:layout_margin="8sp"
+                                android:background="@color/textColorPrimary"
+                                android:padding="5sp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="100dp"
+                                    android:layout_height="50dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/clock" />
+
+                                <TextView
+                                    android:id="@+id/txt_bidding_duration"
+                                    style="@style/lbl_onJob_address_tab"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:gravity="center_vertical"
+                                    android:layout_weight="1"
+                                    android:text="Distane" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/tool_bar"/>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:background="@color/color_toolbar"
+        android:elevation="6dp"
+        app:tabTextAppearance="@style/CustomTextStyle"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:fillViewport="false" />
+
+    <LinearLayout
+        android:background="@color/color_dark_blue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <ImageView
+                android:id="@+id/imgBlue"
+                android:layout_width="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/squar_blue"
+                />
+
+            <TextView
+                android:id="@+id/lbl_payable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lbl_payable"
+                style="@style/txt_kerb_details"
+                android:textSize="@dimen/textsize_small"
+                android:layout_alignBottom="@+id/lbl_credit"
+                android:layout_toEndOf="@+id/imgBlue" />
+            <ImageView
+                android:id="@+id/imgRed"
+                android:layout_width="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/squar_red"
+                android:layout_toRightOf="@+id/lbl_payable"
+                />
+
+            <TextView
+                android:id="@+id/lbl_credit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="@dimen/textsize_small"
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@+id/imgRed"
+                android:text="@string/lbl_credit"
+                style="@style/txt_kerb_details"/>
+            <ImageView
+                android:id="@+id/imgGreen"
+                android:layout_width="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/squar_green"
+                android:layout_toRightOf="@+id/lbl_credit"
+                />
+
+            <TextView
+                android:id="@+id/lbl_wallet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="@dimen/textsize_small"
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@+id/imgGreen"
+                android:text="@string/lbl_wallet"
+                style="@style/txt_kerb_details"/>
+        </RelativeLayout>
+        </LinearLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tabs"/>
+</LinearLayout>

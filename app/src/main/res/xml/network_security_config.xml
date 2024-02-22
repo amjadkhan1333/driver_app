@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">ajmantaxi.AKtelematics.com</domain>
+        <domain includeSubdomains="true">47.252.16.64</domain>
+        <domain includeSubdomains="true">180.179.236.125</domain>
+        <domain includeSubdomains="true">103.211.202.112</domain>
+    </domain-config>
+</network-security-config>

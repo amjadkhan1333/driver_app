@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/tool_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="@color/color_dark_blue"
+        android:padding="5dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            card_view:cardBackgroundColor="@color/color_dark_blue"
+            card_view:cardCornerRadius="1dp"
+            card_view:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="3dp">
+
+            <LinearLayout
+                android:id="@+id/layoutCustomerDetails"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="4dp"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/lblCustomerName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/lbl_callcenter"
+                        android:textSize="@dimen/textsize"
+                        android:text="@string/lbl_customer_name" />
+
+                    <TextView
+                        android:id="@+id/txtCustomerName"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        style="@style/txt_kerb"
+                        android:textSize="@dimen/textsize_small"
+                        android:text="Test" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="4dp"
+                    android:padding="5dp">
+                    <RelativeLayout
+                        android:id="@+id/layout_mobNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+                    <TextView
+                        android:id="@+id/lblPhoneNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/lbl_callcenter"
+                        android:textSize="@dimen/textsize"
+                        android:text="@string/lbl_phoneNO" />
+                    <TextView
+                        android:id="@+id/txtPhoneNo"
+                        android:layout_below="@+id/lblPhoneNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/txt_kerb"
+                        android:textSize="@dimen/textsize_small"
+                        android:text="8951568775" />
+                        <ImageView
+                            android:layout_toLeftOf="@+id/lblPhoneNo"
+                            android:id="@+id/img_call"
+                            android:layout_gravity="center"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/ic_action_phone_icon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="3sp"
+                            android:gravity="center"
+                            />
+                    </RelativeLayout>
+                </LinearLayout>
+
+               <!-- <ImageView
+                    android:id="@+id/img_call"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ic_action_phone_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3sp"
+                    android:gravity="center"
+                    />-->
+                </LinearLayout>
+                <View
+                    android:id="@+id/lineView"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#d3d3d3" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="4dp"
+                    android:padding="5dp">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+                        <TextView
+                            android:id="@+id/lblPickUpLocation"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/lbl_callcenter_tab"
+                            android:text="@string/lbl_pickup_location"/>
+
+                        <TextView
+                            android:layout_below="@+id/lblPickUpLocation"
+                            android:id="@+id/txtPickUpLocation"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:maxLines="3"
+                            style="@style/txt_kerb_tab"
+                            android:text="Uttarahlli" />
+                        <ImageView
+                            android:layout_alignParentTop="true"
+                            android:id="@+id/img_pickup"
+                            android:layout_gravity="center"
+                            android:layout_alignParentRight="true"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:background="@drawable/green"
+                            android:layout_marginTop="7dp"
+                            android:layout_marginRight="5dp"
+                            android:gravity="center"
+                            />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#d3d3d3" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="4dp"
+                    android:padding="5dp">
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/lblDropLocation"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            style="@style/lbl_callcenter_tab"
+                            android:text="@string/lbl_drop_location"/>
+
+                        <TextView
+                            android:layout_below="@+id/lblDropLocation"
+                            android:id="@+id/txtDropLocation"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:maxLines="3"
+                            style="@style/txt_kerb_tab"
+                            android:text="Banashankari" />
+                        <ImageView
+                            android:layout_alignParentTop="true"
+                            android:id="@+id/img_drop"
+                            android:layout_gravity="center"
+                            android:layout_alignParentRight="true"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:background="@drawable/red"
+                            android:layout_marginTop="7dp"
+                            android:layout_marginRight="5dp"
+                            android:gravity="center"
+                            />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#d3d3d3" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="4dp"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/lblPickUpTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        style="@style/lbl_callcenter"
+                        android:textSize="@dimen/textsize"
+                        android:text="@string/lbl_pickup_time" />
+
+                    <TextView
+                        android:id="@+id/txtPickUpTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        style="@style/txt_kerb"
+                        android:textSize="@dimen/textsize_small"
+                        android:text="10:45 AM" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <include layout="@layout/content_map" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+   <!-- <Button
+        android:id="@+id/btn_accept"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="@string/btn_accept"
+        android:background="@drawable/login_btn"
+        style="@style/login_btn"
+        android:layout_gravity="center_horizontal|bottom" />-->
+</LinearLayout>

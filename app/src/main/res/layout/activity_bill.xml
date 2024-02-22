@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_dark_blue"
+    android:orientation="vertical">
+
+    <include layout="@layout/tool_bar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginBottom="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/color_dark_blue"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_total_fare"
+                style="@style/txt_total_fare"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="12dp"
+                android:gravity="center"
+                android:text="6500"
+                android:textColor="@color/quantum_white_text" />
+
+            <TextView
+                android:id="@+id/lbl_currency"
+                style="@style/amount_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_total_fare"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginBottom="30dp"
+                android:gravity="center"
+                android:text="@string/currency"
+                android:textColor="#ffffff"
+                android:textSize="20dp" />
+
+            <WebView
+                android:id="@+id/webviewBill"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/lbl_currency"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/quantum_white_text" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_finish"
+                style="@style/login_btn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/space"
+                android:layout_marginRight="@dimen/halfspace"
+                android:background="@color/eme_btn_color"
+                android:gravity="center"
+                android:text="@string/btn_finish" />
+
+            <Button
+
+                android:id="@+id/btn_print"
+                style="@style/login_btn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="@dimen/halfspace"
+                android:layout_marginRight="@dimen/space"
+                android:layout_weight="1"
+                android:layout_alignParentBottom="true"
+                android:background="@color/color_green"
+                android:gravity="center"
+                android:text="Print Bill" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

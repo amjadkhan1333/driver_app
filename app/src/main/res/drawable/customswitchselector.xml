@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_checked="true"><shape android:dither="true" android:shape="oval" android:useLevel="false" android:visible="true">
+            <gradient android:angle="270" android:endColor="@color/txt_dig_promocode" android:startColor="@color/txt_dig_promocode" />
+
+            <corners android:radius="20dp" />
+
+            <size android:height="20dp" android:width="20dp" />
+
+            <stroke android:width="4dp" android:color="#0000ffff" />
+        </shape></item>
+    <item android:state_checked="false"><shape android:dither="true" android:shape="oval" android:useLevel="false" android:visible="true">
+            <gradient android:angle="270" android:endColor="@color/txt_dig_promocode" android:startColor="@color/txt_dig_promocode" />
+
+            <corners android:radius="20dp" />
+
+            <size android:height="20dp" android:width="20dp" />
+
+            <stroke android:width="4dp" android:color="#0000ffff" />
+        </shape></item>
+
+</selector>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#043927</color>
+    <color name="colorPrimaryDark">#01795F</color>
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="navigationBarColor">#000000</color>
+    <color name="colorAccent">#FFFFFF</color>
+    <color name="btn_color">#d5971a</color>
+    <color name="eme_btn_color">#ff0000</color>
+    <color name="wait_btn_color">#ff6c00</color>
+    <color name="txt_dig_promocode">#000000</color>
+
+    <color name="color_red">#EF3F1A</color>
+    <color name="color_blue">#39796b</color>
+    <color name="color_dark_blue">#004d40</color>
+<!--    <color name="color_dark_blue">#008080</color>-->
+    <color name="color_green">#0EA610</color>
+    <color name="color_transparent">#80000000</color>
+    <color name="color_white_light">#F1F1F1</color>
+
+
+<!--//Sunlight-->
+    <color name="color_toolbar">#ff9900</color>
+    <color name="color_dark_gray">#251c1f</color>
+
+    <color name="edt_login">#ababaf</color>
+    <color name="color_switch">#332733</color>
+    <color name="color_switch_track">#8DACEA</color>
+    <color name="edt_login_hint">#ffffff</color>
+    <color name="home_color_gray">#342734</color>
+    <color name="color_inactive">#b8b8b8</color>
+    <color name="color_history">#4774FC</color>
+    <color name="btn_bg_color">#51b0f2</color>
+</resources>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_dark_blue"
+    android:orientation="vertical">
+
+    <View
+        android:layout_below="@+id/rLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:background="@color/edt_login"
+        />
+
+    <RelativeLayout
+        android:id="@+id/rLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp">
+
+
+        <ImageView
+            android:id="@+id/home_fab"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/space"
+            android:padding="@dimen/halfspace"
+            android:background="@drawable/round_white"
+            android:scaleType="fitXY"
+            android:src="@drawable/kerb" />
+
+        <TextView
+            android:id="@+id/txtHeading"
+            style="@style/title_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="16dp"
+            android:layout_toRightOf="@+id/home_fab"
+            android:text="Street Job"
+            android:textSize="@dimen/textsize" />
+
+        <TextView
+            android:id="@+id/txtSubHeading"
+            style="@style/subtitle_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtHeading"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@+id/home_fab"
+            android:text="Street Job"
+            android:textColor="@color/color_white_light"
+            android:textSize="@dimen/textsize_small" />
+
+        <View
+            android:id="@+id/viewLine"
+            android:layout_width="2dp"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/txtCurrency"
+            android:background="#ffffff"
+           android:layout_margin="20dp"/>
+
+        <TextView
+            android:id="@+id/txtAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="16dp"
+            android:textSize="@dimen/textsize"
+            android:layout_alignParentRight="true"
+            style="@style/title_home"
+            />
+        <TextView
+            android:id="@+id/txtCurrency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtHeading"
+            android:layout_marginLeft="20dp"
+            android:textSize="@dimen/textsize"
+            android:layout_marginRight="40dp"
+            android:layout_alignParentRight="true"
+            style="@style/title_home"
+            />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

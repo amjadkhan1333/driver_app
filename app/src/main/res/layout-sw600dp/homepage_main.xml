@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout_main"
+    android:background="@color/color_dark_blue"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/LTabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_dark_blue"
+        android:layout_below="@+id/bannerLayout"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/lbl_completed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/lbl_completed"
+                style="@style/home_tabs_for_tab"
+                />
+
+            <TextView
+                android:id="@+id/txt_completed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="15"
+                style="@style/txt_home_earnings"/>
+
+        </LinearLayout>
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5sp"
+            android:background="@color/color_toolbar"
+            android:padding="5sp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/lbl_cancelled"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/lbl_cancelled"
+                style="@style/home_tabs_for_tab"
+                />
+
+            <TextView
+                android:id="@+id/txt_cancelled"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="15"
+                style="@style/txt_home_earnings" />
+        </LinearLayout>
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5sp"
+            android:background="@color/color_toolbar"
+            android:padding="5sp" />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/lbl_earntime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/lbl_earntime"
+                style="@style/home_tabs_for_tab"
+                />
+
+            <TextView
+                android:id="@+id/txt_earntime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="15:00"
+                style="@style/txt_home_earnings" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/LTabs">
+
+        <ListView
+            android:id="@+id/listview_home"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"/>
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_emergency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="16dp"
+        android:clickable="true"
+        android:elevation="0dp"
+        android:scaleType="fitCenter"
+        app:backgroundTint="@color/eme_btn_color"
+        android:src="@drawable/emergency_btn" />
+
+    <RelativeLayout
+        android:id="@+id/bannerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <TextView
+            android:id="@+id/lbl_home_earning"
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:layout_toLeftOf="@+id/lbl_home_currency"
+            android:text="@string/lbl_home_earnings"
+            style="@style/lbl_home_earnings_tab"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/lbl_home_currency"
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:layout_toLeftOf="@+id/txt_home_earning"
+            style="@style/lbl_home_earnings_tab"
+            android:layout_marginRight="@dimen/space"
+            android:text="in"
+            android:layout_marginLeft="@dimen/padding"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/txt_home_earning"
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:text="10,000"
+            android:gravity="center"
+            android:textSize="30sp"
+            style="@style/lbl_home_earnings"
+            android:padding="5dp"
+            android:layout_marginRight="@dimen/padding"
+            android:layout_alignParentRight="true"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="3dp"
+            android:layout_marginBottom="5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:id="@+id/lbl_login_hours"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lbl_login_time"
+                style="@style/lbl_login_time_tab"
+                android:layout_gravity="center"
+                android:gravity="center"
+                />
+            <TextView
+                android:id="@+id/txt_login_hours"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/lbl_login_time_tab"
+                android:gravity="center"
+                android:layout_gravity="center"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_dark_blue"
+    android:orientation="horizontal"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="254dp"
+        android:background="@color/color_dark_blue"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:orientation="vertical"
+        android:layout_weight="0.86">
+
+        <TextView
+            android:id="@+id/lblGpsGsmEnableTitle"
+            style="@style/lbl_are_you_sure_tab"
+            android:layout_margin="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/lbl_are_you_sure" />
+
+        <Button
+            android:id="@+id/btnGpsGsmOk"
+            style="@style/btn_bidding_tab"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:textColor="@color/quantum_white_text"
+            android:background="@color/color_toolbar"
+            android:text="@string/ok" />
+    </LinearLayout>
+</LinearLayout>

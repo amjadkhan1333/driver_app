@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_dark_blue"
+    android:orientation="vertical">
+
+    <include layout="@layout/tool_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="7dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtSelectRoute"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="VasanthNager-Shivaginagar"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/color_dark_gray"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="86dp"
+                        android:layout_height="2dp"
+                        android:layout_gravity="center|end"
+                        android:layout_marginLeft="7dp"
+                        android:background="@color/color_toolbar" />
+
+                    <TextView
+                        android:id="@+id/txtFrom"
+                        android:layout_width="match_parent"
+                        android:layout_height="44dp"
+                        android:layout_weight="1"
+                        android:background="#fff"
+                        android:gravity="center|left"
+                        android:text=" From :VasanthNager"
+                        android:textColor="@color/colorPrimary" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="7dp">
+
+        <ListView
+            android:id="@+id/lstWayPointList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@null"
+            android:dividerHeight="0dp"></ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:orientation="vertical"
+        android:padding="7dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/color_dark_gray"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="86dp"
+                android:layout_height="2dp"
+                android:layout_gravity="center|end"
+                android:layout_marginLeft="7dp"
+                android:background="@color/color_toolbar" />
+
+            <TextView
+                android:id="@+id/txtTo"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_weight="1"
+                android:background="#fff"
+                android:gravity="center|left"
+                android:text=" To:Shivaginagar"
+                android:textColor="@color/colorPrimary" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnStartRSA"
+            android:layout_width="196dp"
+            android:layout_height="41dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/login_btn"
+            android:text="Start RSA"
+            android:textColor="#fff" />
+    </LinearLayout>
+
+</LinearLayout>

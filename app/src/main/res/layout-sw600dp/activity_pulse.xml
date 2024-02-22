@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_dark_blue"
+    android:orientation="vertical">
+
+    <include layout="@layout/tool_bar" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/layoutImage"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/lbl_device_settings"
+                style="@style/txt_kerb_tab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:text="@string/hint_pulse_count" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/layoutClientId"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/layoutImage"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/colorPrimaryDark"
+            android:gravity="center_vertical">
+
+            <EditText
+                android:id="@+id/edt_pulse_count"
+                style="@style/login_ext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/imgClientId"
+                android:background="@android:color/transparent"
+                android:hint="Eg 2525"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:padding="8dp"
+                android:singleLine="true" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutMeterHeading"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/layoutClientId"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/txt_kerb_tab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:text="@string/hint_odometer_reading" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutMeter"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_below="@+id/layoutMeterHeading"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_vertical">
+
+            <EditText
+                android:id="@+id/edt_kilometer"
+                style="@style/login_ext"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/imgPassword"
+                android:background="@color/colorPrimaryDark"
+                android:hint="Km"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:maxLength="5"
+                android:padding="8dp"
+                android:singleLine="true" />
+
+            <EditText
+                android:id="@+id/edt_meter"
+                style="@style/login_ext"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_toRightOf="@+id/imgPassword"
+                android:background="@color/colorPrimaryDark"
+                android:hint="M"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:maxLength="1"
+                android:padding="8dp"
+                android:singleLine="true" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSubmit"
+            style="@style/login_btn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/icon_size"
+            android:layout_below="@+id/layoutMeter"
+            android:layout_alignStart="@+id/layoutPassword"
+            android:layout_alignLeft="@+id/layoutPassword"
+            android:layout_margin="20dp"
+            android:background="@drawable/login_btn"
+            android:gravity="center"
+            android:text="@string/btn_submit" />
+
+    </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

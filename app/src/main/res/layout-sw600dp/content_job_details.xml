@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/tools"
+    app:ignore="NamespaceTypo">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:background="@color/color_dark_blue"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:layout_alignParentLeft="true">
+
+                <RelativeLayout
+                    android:id="@+id/rLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/linear_customer_details"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/layout_label"
+                            android:layout_width="0dp"
+                            android:layout_weight="2"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/lbl_job_id"
+                                style="@style/txt_kerb_details_tab"
+                                android:layout_width="match_parent"
+                                android:gravity="center_vertical"
+                                android:layout_height="0dp"
+                                android:paddingLeft="@dimen/halfspace"
+                                android:layout_weight="1"
+                                android:text="@string/job_id" />
+
+                            <TextView
+                                android:id="@+id/lbl_customer_name"
+                                style="@style/txt_kerb_details_tab"
+                                android:layout_width="match_parent"
+                                android:gravity="center_vertical"
+                                android:layout_height="0dp"
+                                android:paddingLeft="@dimen/halfspace"
+                                android:layout_weight="1"
+                                android:text="@string/lbl_customer_name" />
+
+                            <TextView
+                                android:id="@+id/lbl_customer_phone"
+                                style="@style/txt_kerb_details_tab"
+                                android:layout_width="match_parent"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="@dimen/halfspace"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:text="@string/lbl_phone" />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/layout"
+                            android:layout_width="0dp"
+                            android:layout_weight="2"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/txt_job_id"
+                                style="@style/txt_kerb_details_tab"
+                                android:layout_width="match_parent"
+                                android:gravity="center_vertical"
+                                android:layout_height="0dp"
+                                android:padding="@dimen/halfspace"
+                                android:layout_weight="1"
+                                android:text="-" />
+
+                            <EditText
+                                android:id="@+id/edt_customer_Name"
+                                style="@style/txt_kerb_details_tab"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                                android:hint="@string/lbl_customer_name"
+                                android:imeOptions="actionDone"
+                                android:inputType="textCapWords"
+                                android:gravity="center_vertical"
+                                android:textColorHint="@color/quantum_grey400"
+                                android:maxLength="15"
+                                android:singleLine="true"
+                                app:backgroundTint="#ffffff" />
+
+                            <EditText
+                                android:id="@+id/edt_phone"
+                                style="@style/txt_kerb_details_tab"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:hint="@string/lbl_phone"
+                                android:textColorHint="@color/quantum_grey400"
+                                android:imeOptions="actionDone"
+                                android:inputType="number"
+                                android:maxLength="10"
+                                android:singleLine="true"
+                                app:backgroundTint="#ffffff" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/layout_jobType"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:layout_weight="1.3"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/img_jobType"
+                                android:layout_width="56dp"
+                                android:layout_height="56dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="8dp"
+                                android:background="@drawable/ic_action_home"
+                                android:gravity="center"
+                                android:padding="3sp" />
+
+                            <TextView
+                                android:id="@+id/txt_jobType"
+                                style="@style/txt_kerb_details_tab"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:padding="3sp"
+                                android:text="@string/lbl_triptype_local" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/layout_adress"
+                        android:layout_below="@+id/linear_customer_details"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:id="@+id/layout_job_address"
+                            android:layout_width="match_parent"
+                            android:visibility="gone"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="4dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:paddingTop="5dp"
+                                android:paddingBottom="5dp">
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="7dp">
+
+                                    <TextView
+                                        android:id="@+id/lblPickUpLocation"
+                                        style="@style/lbl_callcenter_tab"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/lbl_pickup_location" />
+
+                                    <TextView
+                                        android:id="@+id/txtPickUpLocation"
+                                        style="@style/txt_kerb_tab"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/lblPickUpLocation" />
+
+                                    <ImageView
+                                        android:id="@+id/img_pickup"
+                                        android:layout_width="20dp"
+                                        android:layout_height="20dp"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_gravity="center"
+                                        android:layout_marginTop="7dp"
+                                        android:layout_marginRight="5dp"
+                                        android:background="@drawable/green"
+                                        android:gravity="center" />
+                                </RelativeLayout>
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="#d3d3d3" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="4dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:paddingTop="5dp"
+                                android:paddingBottom="5dp">
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="7dp">
+
+                                    <TextView
+                                        android:id="@+id/lblDropLocation"
+                                        style="@style/lbl_callcenter_tab"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/lbl_drop_location" />
+
+                                    <TextView
+                                        android:id="@+id/txtDropLocation"
+                                        style="@style/txt_kerb_tab"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/lblDropLocation" />
+
+                                    <ImageView
+                                        android:id="@+id/img_drop"
+                                        android:layout_width="20dp"
+                                        android:layout_height="20dp"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_gravity="center"
+                                        android:layout_marginTop="7dp"
+                                        android:layout_marginRight="5dp"
+                                        android:background="@drawable/red"
+                                        android:gravity="center" />
+                                </RelativeLayout>
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="#d3d3d3" />
+
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/layout_Search"
+                            android:layout_width="wrap_content"
+                            android:layout_marginTop="@dimen/space"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/imgSearch"
+                                android:layout_width="56dp"
+                                android:layout_height="56dp"
+                                android:padding="@dimen/halfspace"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/ic_action_search_icon" />
+
+                            <EditText
+                                android:id="@+id/edt_drop_location"
+                                style="@style/txt_kerb_details_tab"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:layout_toRightOf="@+id/imgSearch"
+                                android:enabled="false"
+                                android:hint="@string/txt_kerb_location"
+                                android:imeOptions="actionNext"
+                                android:inputType="textMultiLine"
+                                android:paddingBottom="15sp"
+                                app:backgroundTint="#ffffff"
+                                android:layout_toLeftOf="@+id/imgNavigation" />
+
+                            <ImageView
+                                android:id="@+id/imgNavigation"
+                                android:layout_width="56dp"
+                                android:layout_height="56dp"
+                                android:padding="@dimen/halfspace"
+                                android:rotation="35"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/ic_navigation_new" />
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_below="@+id/layout_adress"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/layout_job_details"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/space"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:padding="5sp">
+
+                            <TextView
+                                android:id="@+id/lbl_startTime"
+                                style="@style/txt_kerb_tab"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/txt_start_time" />
+
+                            <TextView
+                                android:id="@+id/txt_startTime"
+                                style="@style/txt_kerb_tab"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="04:00 pm" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_margin="5sp"
+                            android:background="#999999"
+                            android:padding="5sp" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:padding="5sp">
+
+                            <TextView
+                                android:id="@+id/lbl_duration"
+                                style="@style/txt_kerb_tab"
+                                android:layout_width="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:layout_height="wrap_content"
+                                android:text="@string/txt_duration" />
+
+                            <TextView
+                                android:id="@+id/txt_duration"
+                                style="@style/txt_kerb_tab"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="00 min" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/view_center"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="4dp"
+                        android:layout_below="@+id/layout_job_details"
+                        android:background="#999999"
+                        android:padding="5sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_below="@+id/view_center"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:padding="5sp">
+
+                            <TextView
+                                android:id="@+id/lbl_distance"
+                                style="@style/txt_kerb_tab"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/txt_distance" />
+
+                            <TextView
+                                android:id="@+id/txt_distance"
+                                style="@style/txt_kerb_tab"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0.0 Kms" />
+                        </LinearLayout>
+
+                        <View
+                            android:id="@+id/line_view"
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_margin="5sp"
+                            android:background="#999999"
+                            android:padding="5sp" />
+
+                        <LinearLayout
+                            android:id="@+id/layout_promocode"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <ImageView
+                                android:id="@+id/imgPromoCode"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@drawable/ic_action_promocode"
+                                android:gravity="center"
+                                android:padding="3sp" />
+
+                            <TextView
+                                android:id="@+id/txt_promocode"
+                                style="@style/txt_kerb_tab"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:padding="3sp"
+                                android:text="@string/promocode" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_margin="5sp"
+                            android:background="#999999"
+                            android:padding="5sp"
+                            android:visibility="gone" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+                            <TextView
+                                android:id="@+id/lbl_currency"
+                                style="@style/txt_kerb_tab"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:textColor="@color/quantum_yellow"
+                                android:layout_marginBottom="2dp"
+                                android:text="@string/currency" />
+
+                            <TextView
+                                android:id="@+id/txt_fare"
+                                style="@style/amount_txt_tab"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:textColor="@color/quantum_yellow"
+                                android:gravity="center"
+                                android:text="1500" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    </LinearLayout>
+                </RelativeLayout>
+        </RelativeLayout>
+</RelativeLayout>

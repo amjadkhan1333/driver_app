@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_dark_blue"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/padding">
+
+            <TextView
+                android:id="@+id/dialog_are_you_sure"
+                style="@style/lbl_are_you_sure_tab"
+                android:layout_margin="@dimen/padding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="@dimen/toolbar_textsize"
+                android:text="@string/lbl_are_you_sure" />
+
+            <CheckBox
+                android:id="@+id/check_hotel"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_marginBottom="@dimen/space"
+                android:layout_gravity="center_horizontal"
+                android:textSize="20dp"
+                android:button="@drawable/check_box_selector"
+                android:textColor="@color/color_white_light"
+                android:text="@string/hotel_pickup"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_below="@+id/linearLayout"
+        android:layout_marginTop="32dp"
+        android:layout_weight="0.03">
+
+        <Button
+            android:id="@+id/dialog_btn_no"
+            style="@style/btn_bidding_tab"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:textSize="@dimen/textsize"
+            android:textColor="@color/quantum_white_text"
+            android:background="@color/edt_login"
+            android:text="@string/lbl_no" />
+
+        <Button
+            android:id="@+id/dialog_btn_yes"
+            style="@style/btn_bidding_tab"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="@dimen/textsize"
+            android:textColor="@color/quantum_white_text"
+            android:background="@color/colorPrimaryDark"
+            android:text="@string/lbl_yes" />
+    </LinearLayout>
+</LinearLayout>
