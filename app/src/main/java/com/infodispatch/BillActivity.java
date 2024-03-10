@@ -233,59 +233,65 @@ public class BillActivity extends AppCompatActivity {
         btn_print.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (!bluetoothAdapter.isEnabled()) {
-                    Intent enableIntent = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
-                    startActivityForResult(enableIntent, Constants.REQUEST_ENABLE_BT);
-                }else{
-                    sharedPref = getSharedPreferences(bt_printer_pref,Context.MODE_PRIVATE);
-                    String bt_device_add = sharedPref.getString(bt_device_mac_add, "");
-                    if (mBluetoothService.getState() != BluetoothService.STATE_CONNECTED) {
-//                        if (!bluetoothAdapter.isEnabled()) {
-//                            Intent enableIntent = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
-//                            startActivityForResult(enableIntent, Constants.REQUEST_ENABLE_BT);
-//                        } else {
-//                            setup();
-//                        }
-                        setup();
-                    } else {
-                        //BluetoothPrintTest();
-//                        try{
-//                            mBluetoothService.connect(bluetoothAdapter.getRemoteDevice(bt_device_add));
-//                        }catch (Exception ex){
-//                            setup();
-//                        }
-                        ProgressDialog pDialog = new ProgressDialog(BillActivity.this);
-                        pDialog.setMessage(getResources().getString(R.string.alt_please_wait));
-                        pDialog.setCancelable(false);
-                        pDialog.show();
-
-                        labels = new ArrayList<String>();
-                        values = new ArrayList<String>();
-                        Document doc = Jsoup.parse(RunningJobDetails.getBillData().toString());
-                        //Document doc = Jsoup.parse(Constants.billFormat);
-                        Element table = doc.select("table").first();
-                        Iterator<Element> iterator = table.select("td").iterator();
-                        while (iterator.hasNext()) {
-                            try {
-                                //String value=iterator.next().text();
-                                labels.add(iterator.next().text());
-                                values.add(iterator.next().text());
-                            } catch (Exception ex) {
-                                Log.e("Bill Acitivity", "onClick: " + ex.getMessage());
-                            }
-
-                        }
-                        try{
-                            PrintFormattedBill printFormattedBill = new PrintFormattedBill();
-                            Bitmap  bitmap = getImageFromAssetsFile("ajmantaxi.png");
-                            printFormattedBill.formatBillForHowenBTPrinter(labels,values,bitmap,mBluetoothService);
-                            pDialog.dismiss();
-                        }
-                        catch (Exception ex){
-                            pDialog.dismiss();
-                        }
-                    }
+                if (NetworkStatus.isInternetPresent(BillActivity.this).equals("On")) {
+                    getCompleteRequest();
+                } else {
+                    NetworkCheckDialog.showConnectionTimeOut(BillActivity.this);
                 }
+
+//                if (!bluetoothAdapter.isEnabled()) {
+//                    Intent enableIntent = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
+//                    startActivityForResult(enableIntent, Constants.REQUEST_ENABLE_BT);
+//                }else{
+//                    sharedPref = getSharedPreferences(bt_printer_pref,Context.MODE_PRIVATE);
+//                    String bt_device_add = sharedPref.getString(bt_device_mac_add, "");
+//                    if (mBluetoothService.getState() != BluetoothService.STATE_CONNECTED) {
+////                        if (!bluetoothAdapter.isEnabled()) {
+////                            Intent enableIntent = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
+////                            startActivityForResult(enableIntent, Constants.REQUEST_ENABLE_BT);
+////                        } else {
+////                            setup();
+////                        }
+//                        setup();
+//                    } else {
+//                        //BluetoothPrintTest();
+////                        try{
+////                            mBluetoothService.connect(bluetoothAdapter.getRemoteDevice(bt_device_add));
+////                        }catch (Exception ex){
+////                            setup();
+////                        }
+//                        ProgressDialog pDialog = new ProgressDialog(BillActivity.this);
+//                        pDialog.setMessage(getResources().getString(R.string.alt_please_wait));
+//                        pDialog.setCancelable(false);
+//                        pDialog.show();
+//
+//                        labels = new ArrayList<String>();
+//                        values = new ArrayList<String>();
+//                        Document doc = Jsoup.parse(RunningJobDetails.getBillData().toString());
+//                        //Document doc = Jsoup.parse(Constants.billFormat);
+//                        Element table = doc.select("table").first();
+//                        Iterator<Element> iterator = table.select("td").iterator();
+//                        while (iterator.hasNext()) {
+//                            try {
+//                                //String value=iterator.next().text();
+//                                labels.add(iterator.next().text());
+//                                values.add(iterator.next().text());
+//                            } catch (Exception ex) {
+//                                Log.e("Bill Acitivity", "onClick: " + ex.getMessage());
+//                            }
+//
+//                        }
+//                        try{
+//                            PrintFormattedBill printFormattedBill = new PrintFormattedBill();
+//                            Bitmap  bitmap = getImageFromAssetsFile("ajmantaxi.png");
+//                            printFormattedBill.formatBillForHowenBTPrinter(labels,values,bitmap,mBluetoothService);
+//                            pDialog.dismiss();
+//                        }
+//                        catch (Exception ex){
+//                            pDialog.dismiss();
+//                        }
+//                    }
+//                }
 
             }
         });

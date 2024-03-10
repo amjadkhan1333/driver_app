@@ -3,12 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.infodispatch">
 
-
     <application
         android:name="com.appcontroller.AppController"
         android:allowBackup="true"
         android:icon="@drawable/ic_ck_logo"
         android:label="QAT Driver App"
+        android:usesCleartextTraffic="true"
         android:networkSecurityConfig="@xml/network_security_config"
         android:roundIcon="@drawable/ic_ck_logo"
         android:theme="@style/MyMaterialTheme"
@@ -167,6 +167,7 @@
         android:glEsVersion="0x00020000"
         android:required="true" />
 
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
     <uses-permission android:name="android.permission.BLUETOOTH" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />

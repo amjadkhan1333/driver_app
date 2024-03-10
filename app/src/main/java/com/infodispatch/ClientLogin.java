@@ -161,8 +161,8 @@ public class ClientLogin extends AppCompatActivity {
             edt_password.setTypeface(textFonts);
             btnSignUp = (Button) findViewById(R.id.btnSignUp);
             btnSignUp.setTypeface(textFonts, Typeface.BOLD);
-            edt_clientid.setText("demotds");
-            edt_password.setText("demotds");
+            edt_clientid.setText("tdsqat");
+            edt_password.setText("tdsqat");
             if (db.getCurrentJobDBValuesCount() == 0) {
                 db.insertCurrentJobDBValues(UpdateCurrentJobData.updateJobData());
             }

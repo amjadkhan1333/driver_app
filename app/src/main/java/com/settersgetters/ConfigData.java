@@ -40,7 +40,7 @@ public class ConfigData {
     public static int deviceStatus;
     public static String driverId = "0";
 
-    //ADDED TO HANDLE RUNNING FARE ON METER START FOR AJMAN TAXI
+    //ADDED TO HANDLE RUNNING FARE ON METER START FOR QAT TAXI
     public static double minDistance = 0;
     public static double minAmount = 0;
 

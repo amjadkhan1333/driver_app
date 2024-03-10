@@ -74,6 +74,7 @@ public class WebService{
     public String webInvoke(String methodName, Map<String, Object> params) {
         try
         {
+//			Log.e("WEBINVOKE", "webInvoke: "+methodName + " => "+params );
 	        JSONObject jsonObject = new JSONObject();
 	        for (Map.Entry<String, Object> param : params.entrySet()){
 	            try {
@@ -175,6 +176,7 @@ public class WebService{
 	             
 	            try {
 	                getUrl += param.getKey() + "=" + URLEncoder.encode(param.getValue(),"UTF-8");
+					Log.e("Polling URL : ", "webGet: "+getUrl );
 	            } catch (UnsupportedEncodingException e) {
 	                // TODO Auto-generated catch block
 	                e.printStackTrace();

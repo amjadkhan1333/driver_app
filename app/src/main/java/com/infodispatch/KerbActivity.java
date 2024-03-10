@@ -884,7 +884,7 @@ public class KerbActivity extends AppCompatActivity implements OnMapReadyCallbac
 
         if(pulseManager.getGpsCounter() % 2 == 0) {
             pulseManager.setGpsCounter((pulseManager.getGpsCounter() + 1));
-            checkGeofenceOrToll(GpsData.getLatitude(), GpsData.getLongitude());
+            //checkGeofenceOrToll(GpsData.getLatitude(), GpsData.getLongitude());
         }else{
             pulseManager.setGpsCounter((pulseManager.getGpsCounter() + 1));
         }

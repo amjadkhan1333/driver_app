@@ -17,13 +17,13 @@ public class Utils {
 
     public static String imei_no;
 
-//    public static String getImei_no() {
-//        return imei_no;
-//    }
-//
-//    public static void setImei_no(String imei_no) {
-//        Utils.imei_no = imei_no;
-//    }
+    public static String getImei_no() {
+        return imei_no;
+    }
+
+    public static void setImei_no(String imei_no) {
+        Utils.imei_no = imei_no;
+    }
 
 //    public static String getImei_no() {
 //        return "352356076439231";
@@ -32,13 +32,13 @@ public class Utils {
 //        Utils.imei_no = "352356076439231";
 //    }
 
-    public static String getImei_no() {
-        return "351866090838011";
-    }
-    public static void setImei_no(String imei_no) {
-        Utils.imei_no = "351866090838011";
-    }
-
+//    public static String getImei_no() {
+//        return "351866090838011";
+//    }
+//    public static void setImei_no(String imei_no) {
+//        Utils.imei_no = "351866090838011";
+//    }
+//
 //    public static String getImei_no() {
 //        return "860548040052810";
 //    }

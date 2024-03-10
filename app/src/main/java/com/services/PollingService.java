@@ -1223,7 +1223,7 @@ public class PollingService extends Service implements GoogleApiClient.Connectio
             Notification notification = new NotificationCompat.Builder(this, CHANNEL_ID)
                     .setContentTitle(getApplicationContext().getResources().getString(R.string.alt_app_name) + " is running")
                     .setContentText(input)
-                    .setSmallIcon(R.drawable.ic_launcher)
+                    .setSmallIcon(R.drawable.ic_ck_logo)
                     .setContentIntent(null)
                     .build();
             startForeground(1, notification);
@@ -1260,18 +1260,18 @@ public class PollingService extends Service implements GoogleApiClient.Connectio
                     int threadCntr = 0, pollCounter = 1;
                     while (true) {
                         try {
-//                            if (threadCntr % 2 == 0)
-//                                sendDataToServer();
-//                            else if (threadCntr % 5 == 0)
-//                                recvDataFromServer();
+                            if (threadCntr % 2 == 0)
+                                sendDataToServer();
+                            else if (threadCntr % 5 == 0)
+                                recvDataFromServer();
 //                            else if (threadCntr % 3 == 0)
 //                                sendDataToInfotainment();
-                            if (Integer.parseInt(ConfigData.getPollingInterVal()) == pollCounter) {
+//                            Log.e(TAG, "run: polling interval "+Integer.parseInt(ConfigData.getPollingInterVal())  );
+//                            Log.e(TAG, "run: polling counter "+pollCounter  );
+                            if (pollCounter >= Integer.parseInt(ConfigData.getPollingInterVal()) ) {
 //                                if(null!= pulseManager)
 //                                    GpsData.setExtraCharges(pulseManager.getExtraFare(),pulseManager.getExtraTollFare());
-
                                 pollingData.frame_09_cmd();
-
                                 GpsData.setExtraCharges(0,0);
                                 pollCounter = 0;
                             }
@@ -1324,11 +1324,13 @@ public class PollingService extends Service implements GoogleApiClient.Connectio
                 }
                 if (command != "" && command != null) {
                     System.out.println("Command Framed in Service" + command);
+                    Log.e(TAG, "sendDataToServer: "+ConfigData.getPollingUrl() );
                     WebService webService = new WebService(ConfigData.getPollingUrl() + "/");
                     String[] parsedData = command.split("\\||\\^");
                     Map<String, Object> params = new HashMap<String, Object>();
                     params.put("Cmdid", parsedData[1]);
                     params.put("Cmdstr", command);
+                    Log.e(TAG, "sendDataToServer: "+params );
                     String response = webService.webInvoke("SubmitReturn/" + Utils.getImei_no(), params);
                     System.out.println("Command response in Service" + command);
                     System.out.println("Command response in Service params" + params);

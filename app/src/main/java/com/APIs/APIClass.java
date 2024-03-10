@@ -8,7 +8,10 @@ public class APIClass {
 //    public static String baseURL="http://tdsdemo.AKtelematics.com/RestAPIinfodispatch/Infodispatch.svc/ClientLogInRequest";
 //    public static String baseURL="http://180.179.236.125/TDSdemotaxiAPI/InfoCabRestAPI.svc/ClientLogInRequest";
 //    public static String baseURL="http://103.211.202.112/TDSdemotaxiAPI/InfoCabRestAPI.svc/ClientLogInRequest";
-    public static String baseURL="http://103.211.202.112/RestAPIinfodispatch/Infodispatch.svc/ClientLogInRequest";
+//    http://103.211.202.112/QATTDSdemotaxi/index.aspx
+//    public static String baseURL="http://103.211.202.112/RestAPIinfodispatch/Infodispatch.svc/ClientLogInRequest";
+    public static String baseURL="http://103.185.74.197/QATRestAPIinfodispatch/Infodispatch.svc/ClientLogInRequest";
+//    public static String baseURL="http://103.211.202.112/QATRestAPIinfodispatch/Infodispatch.svc/ClientLogInRequest";
 //    public static String baseURL="http://ajmantaxi.AKtelematics.com/RestAPIinfodispatch/Infodispatch.svc/ClientLogInRequest";
     public static String geofenceURL="http://ajmantaxi.infotracktelematics.com/RestAPIinfodispatchTest/Infodispatch.svc/GeofenceList";
 //    public static String billURL="http://ajmantaxi.AKtelematics.com/RestAPIinfodispatchTest/Infodispatch.svc/";
